@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlayout"
+    android:orientation="vertical">
+    <!--最外层的scrollview-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--最外层的scrollview 只能有一个子视图-->
+        <LinearLayout
+            android:id="@+id/myself_frag_ll"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:background="@mipmap/background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <warron.phpprojectandroid.Tools.RoundImageView
+                    android:id="@+id/myself_header_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/head_boy"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/myself_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="昵称"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!--姓名-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/myself_nameTit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="姓名"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/myself_nameRowImg"
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/bar_arrow_right"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/myself_nameEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_toLeftOf="@+id/myself_nameRowImg"
+                    android:layout_toRightOf="@+id/myself_nameTit"
+                    android:background="@null"
+                    android:hint="请输入您的姓名"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black"></TextView>
+                <!--drawablePadding drawableRight-->
+            </RelativeLayout>
+
+            <!--昵称-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/myself_nicknameTit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="昵称"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/myself_nicknameRowImg"
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/bar_arrow_right"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/myself_nicknameEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/myself_nicknameRowImg"
+                    android:layout_toRightOf="@+id/myself_nicknameTit"
+                    android:background="@null"
+                    android:hint="请输入您的昵称"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black"
+                    android:text=""></TextView>
+            </RelativeLayout>
+
+            <!--生日-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/myself_birthdayTit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="生日"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/myself_birthdayRowImg"
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/bar_arrow_right" />
+
+                <Button
+                    android:id="@+id/myself_birthdayBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/myself_birthdayRowImg"
+                    android:layout_toRightOf="@+id/myself_birthdayTit"
+                    android:background="@null"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="请选择您的生日"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black"
+                    android:text=""></TextView>
+            </RelativeLayout>
+            <!--性别-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/myself_sexTit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="性别"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/myself_sexRowImg"
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/bar_arrow_right" />
+                <Button
+                    android:id="@+id/myself_sexBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/myself_sexRowImg"
+                    android:layout_toRightOf="@+id/myself_sexTit"
+                    android:background="@null"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="请选择性别"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black"
+                    android:text=""></TextView>
+            </RelativeLayout>
+            <!--学校-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/myself_schoolTit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="学校"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/myself_schoolRowImg"
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/bar_arrow_right" />
+
+                <Button
+                    android:id="@+id/myself_schoolBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/myself_schoolRowImg"
+                    android:layout_toRightOf="@+id/myself_schoolTit"
+                    android:background="@null"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="请选择您的学校"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black"
+                    android:text=""></TextView>
+            </RelativeLayout>
+            <!--专业-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/myself_majorTit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="专业"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/myself_majorRowImg"
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/bar_arrow_right" />
+                <Button
+                    android:id="@+id/myself_majorBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/myself_majorRowImg"
+                    android:layout_toRightOf="@+id/myself_majorTit"
+                    android:background="@null"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="请选择专业"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black"
+
+                    android:text=""></TextView>
+            </RelativeLayout>
+            <!--班级-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/myself_classTit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="班级"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/myself_classRowImg"
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null" />
+
+                <EditText
+                    android:id="@+id/myself_classEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/myself_classRowImg"
+                    android:layout_toRightOf="@+id/myself_classTit"
+                    android:background="@null"
+                    android:hint="请输入您的班级"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black"
+                    android:text=""></TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/SysThemeColor"
+                    android:onClick="settingBtnClick"
+                    android:text="设置" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

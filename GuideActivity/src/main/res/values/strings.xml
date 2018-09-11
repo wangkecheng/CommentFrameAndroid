@@ -1,0 +1,5 @@
+<resources>
+    <string name="grant_permissions">授权</string>
+    <string name="please_grant_permissions">请授权</string>
+    <string name="impassable_slide">不能通过本页</string>
+</resources>

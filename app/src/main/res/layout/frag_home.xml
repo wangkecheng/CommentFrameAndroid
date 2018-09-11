@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backimg"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="设置"
+        android:id="@+id/btn_home_setting">
+    </Button>
+
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backimg"
+        android:layout_weight="1"
+        android:text="导出汇总表"
+        android:textColor="@color/white"
+        android:id="@+id/btn_home_exportStatistics"/>
+    <Button
+        android:id="@+id/btn_home_ExportAll"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backimg"
+        android:layout_weight="1"
+        android:text="导出所有统计表"
+        android:textColor="@color/white"
+        />
+</android.support.v7.widget.LinearLayoutCompat>

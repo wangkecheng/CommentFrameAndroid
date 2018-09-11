@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="warron.phpprojectandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".Base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--主页-->
+        <activity
+            android:name=".VC.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--导航页-->
+        <activity
+            android:name=".VC.GuideModule.GuideActivity"
+            android:theme="@style/Theme.Intro">
+        </activity>
+
+        <activity
+            android:name=".VC.FragMySelf.ChooseMajorInVC.ChooseMajorInVC"
+            android:theme="@style/Theme.Intro">
+
+        </activity>
+
+        <!--登录模块-->
+
+        <activity
+            android:name=".VC.LoginMudule.LoginActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".VC.LoginMudule.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VC.LoginMudule.ForgetPassAC"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".Tools.CommonListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Tools.EmptyListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Tools.GridListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Tools.FooterListActivity"
+            android:screenOrientation="portrait" />
+
+
+      <!--选择图片-->
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"
+            />
+
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            />
+    </application>
+
+</manifest>
